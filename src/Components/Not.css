@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black, blue);
+    border-radius: 10px;
+}
+
+.notcoin {
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.notcoin-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    animation-name: notcoin;
+}
+
+.notcoin-img:active {
+    transform: scale(0.9);
+    transition: .1s;
+    animation-name: notcoin;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+
+
+@keyframes notcoin {
+    0% {
+        transform: scale(0deg);
+    }
+
+    100% {
+        transform: scale(360deg);
+    }
+}
+
+.number {
+    font-size: 70px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 100px;
+}
+
+.icon-father {
+    width: 99%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 15px;
+    background: #e7e7e7;
+    opacity: .8;
+    margin-top: 66px;
+}
+
+.icons {
+    opacity: .9;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
